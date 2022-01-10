@@ -1,0 +1,39 @@
+<table class="table ">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">name</th>
+      <th scope="col">email</th>
+      <th scope="col">street</th>
+      <th scope="col">suite</th>
+      <th scope="col">city</th>
+      <th scope="col">zipcode</th>
+      <th scope="col">phone</th>
+      <th scope="col">website</th>
+      <th scope="col">company</th>
+
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let userdetail of userdetails">
+
+       <th>{{userdetail.id}}</th>
+       <td>{{userdetail.name}}</td>
+       <td>{{userdetail.email}}</td>
+       <td>{{userdetail.address.street}}</td>
+       <td>{{userdetail.address.suite}}</td>
+       <td>{{userdetail.address.city}}</td>
+       <td>{{userdetail.address.zipcode}}</td>
+       <td>{{userdetail.phone}}</td>
+       <td>{{userdetail.website}}</td>
+       <td>{{userdetail.company.name}}</td>
+</tr>
+
+
+      
+
+      
+  </tbody>
+</table>

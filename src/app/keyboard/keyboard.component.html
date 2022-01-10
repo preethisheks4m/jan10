@@ -1,0 +1,18 @@
+<br>
+<br>
+<div class="container">
+    <label for="text">Date</label>
+    <input type="text" class="form-control"  [value]=[todayDate|json] [disabled]="isDisabled"  (blur)="onKeyUp($event)" >
+    <button class="btn" (click)="onClick()">click</button>
+</div>
+<br>
+
+<div class="container">
+    <div>
+        <select name="" id="" class="form-control">
+            <option *ngFor="let car of cars">{{car}}</option>
+        </select>
+    </div>
+</div>
+<br>
+<br>
